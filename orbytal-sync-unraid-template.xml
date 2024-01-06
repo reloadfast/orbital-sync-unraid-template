@@ -3,7 +3,7 @@
   <Name>orbital-sync</Name>
   <Repository>mattwebbio/orbital-sync:1</Repository>
   <Registry>https://hub.docker.com/r/mattwebbio/orbital-sync</Registry>
-  <Network>br0</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -14,7 +14,7 @@
 Full configuration details: https://github.com/mattwebbio/orbital-sync#configuration</Overview>
   <Category>Network:DNS Network:Privacy</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://github.com/reloadfast/orbital-sync-unraid-template/edit/main/orbytal-sync-unraid-template.xml<TemplateURL/>
   <Icon>https://github.com/reloadfast/orbital-sync-unraid-template/blob/main/orbital-sync.svg</Icon>
   <ExtraParams/>
   <PostArgs/>
