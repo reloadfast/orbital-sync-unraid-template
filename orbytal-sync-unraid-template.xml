@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>orbital-sync</Name>
+  <Repository>mattwebbio/orbital-sync:1</Repository>
+  <Registry>https://hub.docker.com/r/mattwebbio/orbital-sync</Registry>
+  <Network>br0</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/mattwebbio/orbital-sync</Project>
+  <Overview>Orbital Sync synchronizes multiple Pi-hole instances for high availability (HA) using the built-in "teleporter". In other words, it performs a "backup" in the Pi-hole admin interface of your primary Pi-hole instance, and then "restores" that backup to any number of "secondary" Pi-holes also via their admin interface. As a result, it supports the synchronization of anything currently supported by Pi-hole's "teleporter".&#xD;
+&#xD;
+Full configuration details: https://github.com/mattwebbio/orbital-sync#configuration</Overview>
+  <Category>Network:DNS Network:Privacy</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://user-images.githubusercontent.com/420820/187585158-331400c3-18f3-4673-857e-44efd73c6104.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1704576168</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Primary Pi Hole" Target="PRIMARY_HOST_BASE_URL" Default="" Mode="" Description="https://pihole1.example.com" Type="Variable" Display="always" Required="true" Mask="false">https://pihole1.example.com</Config>
+  <Config Name="Primary Pi Hole password" Target="PRIMARY_HOST_PASSWORD" Default="" Mode="" Description="Primary Pi Hole password" Type="Variable" Display="always" Required="true" Mask="true">pihole1password</Config>
+  <Config Name="Secondary Pi Hole" Target="SECONDARY_HOST_1_BASE_URL" Default="" Mode="" Description="https://pihole2.example.com" Type="Variable" Display="always" Required="true" Mask="false">https://pihole1.example.com</Config>
+  <Config Name="Secondary Pi Hole password" Target="SECONDARY_HOST_1_PASSWORD" Default="" Mode="" Description="Pi Hole #2 password" Type="Variable" Display="always" Required="true" Mask="true">pihole2password</Config>
+  <Config Name="Refresh interval" Target="INTERVAL_MINUTES" Default="30" Mode="" Description="How long to wait between synchronizations. Defaults to five minutes. Remember that the DNS server on your secondary servers restarts everytime a sync is performed." Type="Variable" Display="always" Required="false" Mask="false">30</Config>
+  <Config Name="Update Gravity" Target="UPDATE_GRAVITY" Default="true" Mode="" Description="Triggers a gravity update after a backup has been uploaded to a secondary Pi-hole. This updates adlists and restarts gravity." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Sync adlist" Target="SYNC_ADLIST" Default="true" Mode="" Description="Copies the adlist" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Sync CNAME " Target="SYNC_LOCALCNAMERECORDS" Default="true" Mode="" Description="Copies local CNAME records" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Run Once" Target="RUN_ONCE" Default="false" Mode="" Description="By default, orbital-sync runs indefinitely until stopped. Setting RUN_ONCE to true forces it to exit immediately after the first sync." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
