@@ -14,15 +14,15 @@
 Full configuration details: https://github.com/mattwebbio/orbital-sync#configuration</Overview>
   <Category>Network:DNS Network:Privacy</Category>
   <WebUI/>
-  <TemplateURL>https://github.com/reloadfast/orbital-sync-unraid-template/edit/main/orbytal-sync-unraid-template.xml<TemplateURL/>
-  <Icon>https://github.com/reloadfast/orbital-sync-unraid-template/blob/main/orbital-sync.svg</Icon>
+  <TemplateURL/>
+  <Icon>https://user-images.githubusercontent.com/420820/187585158-331400c3-18f3-4673-857e-44efd73c6104.svg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1704576168</DateInstalled>
+  <DateInstalled>1704576677</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires/>
+  <Requires>Change the network type to match your Pi Hole docker network.</Requires>
   <Config Name="Primary Pi Hole" Target="PRIMARY_HOST_BASE_URL" Default="" Mode="" Description="https://pihole1.example.com" Type="Variable" Display="always" Required="true" Mask="false">https://pihole1.example.com</Config>
   <Config Name="Primary Pi Hole password" Target="PRIMARY_HOST_PASSWORD" Default="" Mode="" Description="Primary Pi Hole password" Type="Variable" Display="always" Required="true" Mask="true">pihole1password</Config>
   <Config Name="Secondary Pi Hole" Target="SECONDARY_HOST_1_BASE_URL" Default="" Mode="" Description="https://pihole2.example.com" Type="Variable" Display="always" Required="true" Mask="false">https://pihole1.example.com</Config>
