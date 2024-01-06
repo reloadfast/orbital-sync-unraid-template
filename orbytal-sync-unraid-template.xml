@@ -15,7 +15,7 @@ Full configuration details: https://github.com/mattwebbio/orbital-sync#configura
   <Category>Network:DNS Network:Privacy</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://user-images.githubusercontent.com/420820/187585158-331400c3-18f3-4673-857e-44efd73c6104.svg</Icon>
+  <Icon>https://github.com/reloadfast/orbital-sync-unraid-template/blob/main/orbital-sync.svg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
